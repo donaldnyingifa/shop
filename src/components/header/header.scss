@@ -1,6 +1,8 @@
 .header {
     height: 70px;
     width: 100%;
+    z-index: 4;
+    color: whitesmoke;
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
@@ -19,6 +21,8 @@
       justify-content: flex-end;
   
       .option {
+        color: whitesmoke;
+        font-size: 25px;
         padding: 10px 15px;
         cursor: pointer;
       }
