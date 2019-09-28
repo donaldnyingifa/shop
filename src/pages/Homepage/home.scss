@@ -16,5 +16,18 @@
   .box-gallery{
     z-index: -4;
   }
+
+  .parallax {
+    /* The image used */
+    background-image: url("../../assets/everton.jpg");
+  
+    /* Set a specific height */
+    height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   
   
