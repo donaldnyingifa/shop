@@ -2,7 +2,7 @@
     height: 70px;
     width: 100%;
     z-index: 4;
-    color: whitesmoke;
+    color: rgb(151, 73, 73);
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
@@ -21,7 +21,7 @@
       justify-content: flex-end;
   
       .option {
-        color: whitesmoke;
+        color: rgb(151, 73, 73);
         font-size: 25px;
         padding: 10px 15px;
         cursor: pointer;
