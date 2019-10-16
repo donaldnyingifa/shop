@@ -1,35 +1,41 @@
 import CartActionTypes from "../cart/cart.types"
 
+import JumpSuites from '../../assets/9.jpg'
+import Gowns from '../../assets/12_.jpg'
+import NewArrivals from '../../assets/6_.jpg'
+import Dresses from '../../assets/13.jpg'
+import Tops from '../../assets/8.jpg'
+
 const INITIAL_STATE = {
     sections: [
         {
-          title: 'hats',
-          imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+          title: 'JumpSuites',
+          imageUrl: JumpSuites,
           id: 1,
           linkUrl: 'shop/hats'
         },
         {
-          title: 'jackets',
-          imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+          title: 'tops',
+          imageUrl: Tops,
           id: 2,
           linkUrl: 'shop/jackets'
         },
         {
-          title: 'sneakers',
-          imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+          title: 'dresses',
+          imageUrl: Dresses,
           id: 3,
           linkUrl: 'shop/sneakers'
         },
         {
-          title: 'womens',
-          imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+          title: 'new arrivals',
+          imageUrl: NewArrivals,
           size: 'large',
           id: 4,
           linkUrl: 'shop/womens'
         },
         {
-          title: 'mens',
-          imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+          title: 'gowns',
+          imageUrl: Gowns,
           size: 'large',
           id: 5,
           linkUrl: 'shop/mens'
