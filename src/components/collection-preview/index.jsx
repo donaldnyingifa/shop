@@ -3,10 +3,10 @@ import CollectionItem from '../collection-item';
 
 import './collection-preview.scss';
 
-const CollectionPreview = ({ title, items }) => (
+const CollectionPreview = ({ title, items, clicktitle }) => (
     <div className='collection-preview'>
-        <h1 className='title'>{title.toUpperCase()}</h1>
-        <div className='preview'> 
+        <h1 onClick={clicktitle} className='title'>{title.toUpperCase()}</h1>
+        <div className='preview '> 
             {items
                 .filter((item, idx) => idx < 4)
                 .map(item => (

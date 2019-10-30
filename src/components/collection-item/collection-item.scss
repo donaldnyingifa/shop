@@ -1,3 +1,17 @@
+// Media Querries mixin
+
+@mixin MediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin MediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
 .collection-item {
     width: 22%;
     display: flex;
@@ -46,5 +60,17 @@
       .price {
         width: 10%;
       }
+    }
+  }
+
+  @include MediaSm {
+    .collection-item {
+      width: 40vw;
+    }
+  }
+
+  @include MediaMd {
+    .collection-item {
+      width: 40vw;
     }
   }

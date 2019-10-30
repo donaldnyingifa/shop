@@ -2,7 +2,7 @@ import CartActionTypes from "../cart/cart.types"
 
 import JumpSuites from '../../assets/9.jpg'
 import Gowns from '../../assets/12_.jpg'
-import NewArrivals from '../../assets/6_.jpg'
+import NewArrivals from '../../assets/19.jpg'
 import Dresses from '../../assets/13.jpg'
 import Tops from '../../assets/8.jpg'
 
@@ -12,33 +12,33 @@ const INITIAL_STATE = {
           title: 'JumpSuites',
           imageUrl: JumpSuites,
           id: 1,
-          linkUrl: 'shop/hats'
+          linkUrl: 'shop'
         },
         {
           title: 'tops',
           imageUrl: Tops,
           id: 2,
-          linkUrl: 'shop/jackets'
+          linkUrl: 'shop'
         },
         {
           title: 'dresses',
           imageUrl: Dresses,
           id: 3,
-          linkUrl: 'shop/sneakers'
+          linkUrl: 'shop'
         },
         {
           title: 'new arrivals',
           imageUrl: NewArrivals,
           size: 'large',
           id: 4,
-          linkUrl: 'shop/womens'
+          linkUrl: 'shop'
         },
         {
           title: 'gowns',
           imageUrl: Gowns,
           size: 'large',
           id: 5,
-          linkUrl: 'shop/mens'
+          linkUrl: 'shop'
         }
       ]
 }

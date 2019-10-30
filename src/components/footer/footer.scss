@@ -1,17 +1,16 @@
 .footer {
     padding: 30px;
-    color: aquamarine;
-    background-color: rgb(20, 19, 19);
+    color: #7c7c7c;
+    background-color: #efefef;
 
     h2 {
         margin-bottom: 15px;
-        color: #aa8242;
+        color: #111010;
         font-size: 20px;
         position: relative;
         padding-bottom: 15px;
     }
 
-    div {
         ul {
             display: block;
             list-style-type: disc;
@@ -28,20 +27,28 @@
             cursor: pointer;
             margin-bottom: 10px;
             a {
-                color: #ffffff;
+                color: #7c7c7c;
             }
         }
-    }
+        span {
+            margin: 0;
+            padding-left:20px;
+            cursor: pointer;
+            a {
+                color: #111010;
+            }
+        }
 }
 
 .fb {
-    background-color: #000;
+    width: 100%;
+    background-color: #242222;
     margin: 0;
-    font: 400;
     padding-top: 2vh;
     padding-bottom: 2vh;
     padding-left: 10vw;
-    color: antiquewhite;
+    color: #7c7c7c;
+    font-size: 0.5em;
 }
 
 

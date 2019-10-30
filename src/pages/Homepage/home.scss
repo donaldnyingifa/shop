@@ -1,3 +1,29 @@
+// Media Querries mixin
+
+@mixin MediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin MediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin MediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin MediaXl {
+  @media screen and (min-width: 1170px) {
+    @content;
+  }
+}
+
 .homepage {
     display: flex;
     flex-direction: column;
@@ -20,9 +46,9 @@
   .parallax {
     /* The image used */
     background-image: url("../../assets/03.jpg");
-  
+    background-color: #201e1e;
     /* Set a specific height */
-    height: 500px;
+    height: 80vh;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -37,5 +63,39 @@
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
   }
+
+  .collection-preview {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
   
+    .title {
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+  
+    .preview {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .p {
+    padding: 20px 80px;
+  }
+  
+  @include MediaSm {
+    .parallax {
+      background-image: none;
+    }
+    .parallaxText {
+      background-color: transparent;
+    }
+    .homepage{
+      padding: 10px;
+    }
+    .p {
+      padding: 10px;
+    }
+  }
   

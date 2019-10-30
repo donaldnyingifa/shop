@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import './footer.scss'
 
 const Footer = () => (
-    <div>
-    <div className="row footer">
-        <div className="col-sm-4">
+    <div className="row">
+    {/* <div className=""> */}
+        <div className="col-sm-4 footer">
             <h2>LOCATE US</h2>
             <ul>
             <li>Suite B 2.3 Heroes Place</li>
@@ -12,27 +13,44 @@ const Footer = () => (
             <li>Abuja, Nigeria</li>
             </ul>
         </div>
-        <div className="col-sm-4">
+        <div className="col-sm-4 footer">
             <h2>FOOTER MENU</h2>
             <ul>
-                <li>Contact</li>
-                <li>About</li>
-                <li>Return Policy</li>
+                <li>
+                     <Link to='/'>
+                         Home
+                     </Link>
+                </li>
+                <li>
+                     <Link to='/shop'>
+                         Shop
+                     </Link>
+                </li>
+                <li>
+                     <Link to='/contact'>
+                         Contact
+                     </Link>
+                </li>
+                <li>
+                     <Link to='/about'>
+                           About
+                     </Link>
+                </li>
             </ul>
         </div>
-        <div className="col-sm-4">
+        <div className="col-sm-4 footer">
             <h2>GET SOCIAL</h2>
-                <ul>
-                    <li><a href="https://www.instagram.com/kyrieuberfashion_/" target="_blank" rel="noopener noreferrer" class="white-text">
-                        <i class="fa fa-rss fa-2x"></i></a></li>
-                    <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="white-text">
+                    <span><a href="https://www.instagram.com/kyrieuberfashion_/" target="_blank" rel="noopener noreferrer" class="white-text">
+                         <i class="fab fa-instagram fa-2x"></i> </a></span>
+                        
+                    <span><a href="https://www.facebook.com/kyrieuberfashionabuja" target="_blank" rel="noopener noreferrer" class="white-text">
                     <i class="fab fa-facebook fa-2x"></i>
-                    </a></li>
-                </ul>
+                    </a></span>
+          
         </div>
         
-    </div>
-    <p className ="fb">© 2019 Kyrieuberfashion | Powered by BomoNyingifa</p>
+    {/* </div> */}
+    <div className ="fb">© 2019 Kyrieuberfashion | Powered by BomoNyingifa</div>
     </div>
 )
 

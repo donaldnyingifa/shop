@@ -1,0 +1,19 @@
+body {
+  font-family: 'Montserrat', 'Open Sans Condensed', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  box-sizing:  border-box;
+}
+
+.centered {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}

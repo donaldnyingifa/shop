@@ -4,14 +4,14 @@ import { connect } from 'react-redux';
 import { setCurrentUser }from './redux/user/user.actions';
 import { createStructuredSelector } from 'reselect';
 import { selectCurrentUser } from './redux/user/user.selectors'
-import './App.css';
+import './App.scss';
 
 import Home from './pages/HomePage'
 import ShopPage from './pages/ShopPage'
 import Checkout from './pages/Checkout'
-import Header from './components/header'
 import Contact from './pages/Contact'
 import About from './pages/About'
+import Match from './pages/Match/matchset'
 import SigninandSignoutPage from './pages/SigninandSignoutPage'
 import { auth, createUserProfileDocument } from './firebase'
 
@@ -43,13 +43,13 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Header  />
         <Switch>
          <Route exact path='/' component={Home} />
          <Route exact path='/shop' component={ShopPage} />
          <Route exact path='/checkout' component={Checkout} />
          <Route exact path='/about' component={About} />
          <Route exact path='/contact' component={Contact} />
+         <Route exact path='/match_set' component={Match}/>
          <Route 
             exact 
             path='/signin' 

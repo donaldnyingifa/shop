@@ -1,0 +1,30 @@
+// Media Querries mixin
+
+@mixin MediaSm {
+    @media screen and (max-width: 500px) {
+      @content;
+    }
+  }
+  
+  @mixin MediaMd {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  }
+
+.shop-page {
+    padding: 20px 80px;
+    margin-top: 10vh;
+}
+
+@include MediaSm {
+    .shop-page {
+        padding: 10px;
+    }
+}
+
+@include MediaMd {
+    .shop-page {
+        padding: 10px;
+    }
+}
