@@ -13,7 +13,7 @@ const Header = props => {
     <header style={{position:"fixed", width:'100%', backgroundColor:'#fff',top:0, height:'10vh'}}>
       <div className="menu-div1">
          <Link to='/'>
-            <img src={logo_} width="100px" alt="logo" />
+            <img src={logo_} width="200px" alt="logo" />
           </Link>
       </div>
       <div className="menu-div " onClick={() => handleVisible(!isVisible)}>

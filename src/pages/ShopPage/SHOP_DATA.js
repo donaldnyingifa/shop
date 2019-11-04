@@ -2,7 +2,7 @@ import c1 from '../../assets/2.jpg'
 import c2 from '../../assets/3.jpg'
 import c3 from '../../assets/4.jpg'
 import c4 from '../../assets/6.jpg'
-import c5 from '../../assets/8.jpg'
+import c5 from '../../assets/26.jpg'
 import c6 from '../../assets/9.jpg'
 import c7 from '../../assets/16.jpg'
 import c8 from '../../assets/10.jpg'
@@ -28,16 +28,65 @@ import c27 from '../../assets/57.jpg'
 import c28 from '../../assets/60.jpg'
 import c29 from '../../assets/61.jpg'
 
-import a from '../../assets/b&s/a.PNG'
-import b from '../../assets/b&s/b.PNG'
-import c from '../../assets/b&s/c.PNG'
-import d from '../../assets/b&s/d.PNG'
-import e from '../../assets/b&s/1.PNG'
-import f from '../../assets/b&s/2.PNG'
-import g from '../../assets/b&s/3.PNG'
-import h from '../../assets/b&s/4.PNG'
+import a from '../../assets/b&s/a.png'
+import b from '../../assets/b&s/b.png'
+import c from '../../assets/b&s/c.png'
+import d from '../../assets/b&s/d.png'
+import e from '../../assets/b&s/1.png'
+import f from '../../assets/b&s/2.png'
+import g from '../../assets/b&s/3.png'
+import h from '../../assets/b&s/4.png'
 
 const SHOP_DATA = [
+  {
+    id: 4,
+    title: 'New Arrivals',
+    routeName: 'shop',
+    items: [
+      {
+        id: 23,
+        name: '',
+        imageUrl: c26,
+        price: null
+      },
+      {
+        id: 24,
+        name: '',
+        imageUrl: c3,
+        price: null
+      },
+      {
+        id: 25,
+        name: '',
+        imageUrl: c28,
+        price: null
+      },
+      {
+        id: 26,
+        name: '',
+        imageUrl: c29,
+        price: null
+      },
+      {
+        id: 27,
+        name: '',
+        imageUrl: c4,
+        price: null
+      },
+      {
+        id: 28,
+        name: 'Yellow Track Suit',
+        imageUrl: c9,
+        price: 135
+      },
+      {
+        id: 29,
+        name: 'White Blouse',
+        imageUrl: 'https://i.ibb.co/qBcrsJg/white-vest.png',
+        price: 20
+      }
+    ]
+  },
   {
     id: 1,
     title: 'Matching Sets',
@@ -46,7 +95,7 @@ const SHOP_DATA = [
       {
         id: 1,
         name: '',
-        imageUrl: c1,
+        imageUrl: c24,
         price: null
       },
       {
@@ -58,13 +107,13 @@ const SHOP_DATA = [
       {
         id: 3,
         name: '',
-        imageUrl: c3,
+        imageUrl: c27,
         price: null
       },
       {
         id: 4,
         name: '',
-        imageUrl: c22,
+        imageUrl: c5,
         price: null
       },
       {
@@ -100,61 +149,6 @@ const SHOP_DATA = [
     ]
   },
   {
-    id: 2,
-    title: 'Tops',
-    routeName: 'shop',
-    items: [
-      {
-        id: 10,
-        name: '',
-        imageUrl: c5,
-        price: null
-      },
-      {
-        id: 11,
-        name: '',
-        imageUrl: c6,
-        price: null
-      },
-      {
-        id: 12,
-        name: '',
-        imageUrl: c7,
-        price: null
-      },
-      {
-        id: 13,
-        name: '',
-        imageUrl: c8,
-        price: null
-      },
-      {
-        id: 14,
-        name: 'Nike Red High Tops',
-        imageUrl: c8,
-        price: 160
-      },
-      {
-        id: 15,
-        name: 'Nike Brown High Tops',
-        imageUrl: c10,
-        price: 160
-      },
-      {
-        id: 16,
-        name: 'Air Jordan Limited',
-        imageUrl: c11,
-        price: 190
-      },
-      {
-        id: 17,
-        name: 'Timberlands',
-        imageUrl: c12,
-        price: 200
-      }
-    ]
-  },
-  {
     id: 3,
     title: 'Dresses',
     routeName: 'dresses',
@@ -180,7 +174,7 @@ const SHOP_DATA = [
       {
         id: 21,
         name: '',
-        imageUrl: c24,
+        imageUrl: c1,
         price: null
       },
       {
@@ -276,100 +270,7 @@ const SHOP_DATA = [
         price: 25
       }
     ]
-  },
-  {
-    id: 4,
-    title: 'New Arrivals',
-    routeName: 'shop',
-    items: [
-      {
-        id: 23,
-        name: '',
-        imageUrl: c26,
-        price: null
-      },
-      {
-        id: 24,
-        name: '',
-        imageUrl: c27,
-        price: null
-      },
-      {
-        id: 25,
-        name: '',
-        imageUrl: c28,
-        price: null
-      },
-      {
-        id: 26,
-        name: '',
-        imageUrl: c29,
-        price: null
-      },
-      {
-        id: 27,
-        name: '',
-        imageUrl: c4,
-        price: null
-      },
-      {
-        id: 28,
-        name: 'Yellow Track Suit',
-        imageUrl: c9,
-        price: 135
-      },
-      {
-        id: 29,
-        name: 'White Blouse',
-        imageUrl: 'https://i.ibb.co/qBcrsJg/white-vest.png',
-        price: 20
-      }
-    ]
-  },
-  {
-    id: 5,
-    title: 'Gowns',
-    routeName: 'gowns',
-    items: [
-      {
-        id: 30,
-        name: '',
-        imageUrl: c16,
-        price: null
-      },
-      {
-        id: 31,
-        name: '',
-        imageUrl: c17,
-        price: null
-      },
-      {
-        id: 32,
-        name: '',
-        imageUrl: c18,
-        price: null
-      },
-      {
-        id: 33,
-        name: '',
-        imageUrl: c19,
-        price: null
-      },
-      {
-        id: 34,
-        name: 'Jean Long Sleeve',
-        imageUrl: c20,
-        price: 40
-      },
-      {
-        id: 35,
-        name: 'Burgundy T-shirt',
-        imageUrl: c21,
-        price: 25
-      }
-    ]
   }
-  
 ];
 
 export default SHOP_DATA;

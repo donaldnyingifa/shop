@@ -15,6 +15,10 @@ class ShopPage extends React.Component {
         }
     }
 
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     handleFilter = id => {
         console.log('meee')
     const { collections } = {...this.state}

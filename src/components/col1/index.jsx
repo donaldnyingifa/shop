@@ -35,7 +35,7 @@ const CarouselCustom =()=> (
 
    <Carousel 
    autoPlay
-   autoPlaySpeed={1000}
+   autoPlaySpeed={1250}
    infinite
    responsive={responsive}>
     <div><img src={Img1} alt="kyrie" width="300vw" /></div>
